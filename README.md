@@ -55,7 +55,7 @@ private val registerPermission = registerPermissions()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        GlobalScope.launch {
+        lifeCycleScope.launch {
             val result = anumathi(
                 registerPermission,
                 arrayOf(
